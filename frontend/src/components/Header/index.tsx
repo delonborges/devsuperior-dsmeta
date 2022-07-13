@@ -1,7 +1,7 @@
-import github_logo from '../../assets/images/github.svg'
-import logo from '../../assets/images/logo.svg'
+import github_logo from '../../assets/images/github.svg';
+import logo from '../../assets/images/logo.svg';
 
-import './styles.css'
+import './styles.css';
 
 function Header() {
     return (
@@ -18,4 +18,4 @@ function Header() {
     )
 }
 
-export default Header
+export default Header;
