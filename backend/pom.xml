@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.delonborges</groupId>
-    <artifactId>devsuperior-dsmeta</artifactId>
+    <artifactId>dsmeta</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>devsuperior-dsmeta</name>
-    <description>devsuperior-dsmeta</description>
+    <name>dsmeta</name>
+    <description>dsmeta</description>
     <properties>
         <java.version>11</java.version>
     </properties>

@@ -1,13 +1,13 @@
-package com.delonborges.devsuperiordsmeta;
+package com.delonborges.dsmeta;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DevsuperiorDsmetaApplication {
+public class DsmetaApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DevsuperiorDsmetaApplication.class, args);
+        SpringApplication.run(DsmetaApplication.class, args);
     }
 
 }
