@@ -2,21 +2,21 @@ package com.delonborges.dsmeta.controllers;
 
 import com.delonborges.dsmeta.entities.Sale;
 import com.delonborges.dsmeta.services.SaleService;
+import com.delonborges.dsmeta.services.SmsService;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping(value = "/sales")
 public class SaleController {
 
     private final SaleService saleService;
+    private final SmsService smsService;
 
-    public SaleController(SaleService saleService) {
+    public SaleController(SaleService saleService, SmsService smsService) {
         this.saleService = saleService;
+        this.smsService = smsService;
     }
 
     @GetMapping
@@ -26,4 +26,8 @@ public class SaleController {
         return saleService.findSales(minDate, maxDate, pageable);
     }
 
+    @GetMapping(value = "/{id}/notifications")
+    public void smsNotification(@PathVariable Long id) {
+        smsService.sendSms(id);
+    }
 }
