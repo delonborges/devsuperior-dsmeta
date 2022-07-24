@@ -33,6 +33,12 @@ jobs:
           name: java-app
           path: '${{ github.workspace }}/target/*.jar'
 
+    env:
+        TWILIO_SID: ${{ secrets.TWILIO_SID }}
+        TWILIO_KEY: ${{ secrets.TWILIO_KEY }}
+        TWILIO_PHONE_FROM: ${{ secrets.TWILIO_PHONE_FROM }}
+        TWILIO_PHONE_TO: ${{ secrets.TWILIO_PHONE_TO }}
+
   deploy:
     runs-on: ubuntu-latest
     needs: build
