@@ -30,9 +30,12 @@ function SalesCard() {
 
     return (
         <div className="dsmeta-card">
-            <h2 className="dsmeta-sales-title">Vendas</h2>
-            <div>
+            <h2 className="dsmeta-sales-title">Sales</h2>
+            <div className="dsmeta-card-header">
                 <div className="dsmeta-form-control-container">
+                    <span>
+                        Initial date:
+                    </span>
                     <DatePicker
                         selected={minDate}
                         onChange={(date: Date) => setMinDate(date)}
@@ -41,6 +44,9 @@ function SalesCard() {
                     />
                 </div>
                 <div className="dsmeta-form-control-container">
+                    <span>
+                        Final date:
+                    </span>
                     <DatePicker
                         selected={maxDate}
                         onChange={(date: Date) => setMaxDate(date)}
@@ -75,7 +81,7 @@ function SalesCard() {
                                 <td>R$ {sale.amount.toFixed(2)}</td>
                                 <td>
                                     <div className="dsmeta-red-btn-container">
-                                        <NotificationButton/>
+                                        <NotificationButton saleId={sale.id}/>
                                     </div>
                                 </td>
                             </tr>

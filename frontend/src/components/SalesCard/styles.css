@@ -4,14 +4,23 @@
     padding: 30px 10px;
 }
 
+.dsmeta-card-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
 .dsmeta-sales-title {
-    color: #676fff;
-    font-size: 24px;
+    color: #ffffff;
+    font-size: 32px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .dsmeta-form-control-container {
-    margin-bottom: 16px;
+    margin: auto;
+    padding-bottom: 24px;
     max-width: 300px;
 }
 
