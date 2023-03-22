@@ -5,7 +5,6 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "serve": "serve build -s -L -p $PORT",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -14,8 +13,7 @@
     "react": "^18.0.0",
     "react-datepicker": "^4.8.0",
     "react-dom": "^18.0.0",
-    "react-toastify": "^9.0.7",
-    "serve": "^14.2.0"
+    "react-toastify": "^9.0.7"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",
