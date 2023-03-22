@@ -1,5 +1,5 @@
 # ![DevSuperior logo](https://raw.githubusercontent.com/devsuperior/bds-assets/main/ds/devsuperior-logo-small.png) DevSuperior
->  *Criação de um serviço web para visualização e notificação de vendas*
+>  *Serviço web para visualização e notificação de vendas*
 
 ## Projeto DSMeta
 
